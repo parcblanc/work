@@ -1,11 +1,12 @@
 import Papa from 'papaparse';
 
-const SPREADSHEET_ID = '1UO22G1mcDkF_G56sp5PEqNznQZNAwm-DHLxR8XQoh3U';
+const SPREADSHEET_ID = '13ubnPGaz8uEuY3_v_P9L8Q9rF5difTT_b1j8i5hqUU0';
 const SHEET_ID = '1214302108';
 
 export const loadVocabularyData = async () => {
   try {
-    const csvUrl = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?format=csv&gid=${SHEET_ID}`;
+    // const csvUrl = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/export?format=csv&gid=${SHEET_ID}`;
+     const csvUrl = `https://docs.google.com/spreadsheets/d/13ubnPGaz8uEuY3_v_P9L8Q9rF5difTT_b1j8i5hqUU0/edit?usp=sharing`;
 
     const response = await fetch(csvUrl);
     if (!response.ok) {
